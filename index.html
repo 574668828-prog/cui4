@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情 | 中矿集团铊矿采矿系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #00d2ff;
+            --bg-dark: #0a0c10;
+            --card-bg: #161b22;
+            --text-gray: #8b949e;
+        }
+        body {
+            font-family: 'Inter', 'PingFang SC', sans-serif;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        .placeholder-box {
+            background: #1c2128;
+            border: 2px dashed #30363d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--text-gray);
+            min-height: 300px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .placeholder-box span {
+            font-family: monospace;
+            background: #000;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-top: 10px;
+            color: var(--accent-color);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .btn-primary {
+            background: var(--accent-color);
+            color: #000;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold gradient-text">PORTFOLIO.</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#background" class="nav-link">背景</a>
+                <a href="#process" class="nav-link">流程</a>
+                <a href="#research" class="nav-link">调研</a>
+                <a href="#structure" class="nav-link">架构</a>
+                <a href="#interaction" class="nav-link">交互</a>
+                <a href="#ui" class="nav-link">组件</a>
+                <a href="#impact" class="nav-link">成果</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">中矿集团铊矿采矿系统</h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10">
+                基于 WebGL 技术的矿山数字孪生平台，将井下传感器数据转化为直观的 3D 可视化界面。
+            </p>
+            <div class="placeholder-box max-w-5xl mx-auto">
+                <p>项目主视觉预览图</p>
+                <span>06_Final_Visual_Dashboard_Main.png</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. 项目背景与目标 -->
+    <section id="background" class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="w-8 h-1 bg-cyan-500 mr-4"></span>项目背景与目标
+                </h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    传统矿山监控系统多依赖于二维平面图，面对复杂的井下多维传感器数据，调度员难以快速判断事故精准位置。
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="glass-card p-4 text-center">
+                        <div class="text-3xl font-bold text-cyan-400 mb-1">30%</div>
+                        <div class="text-xs text-gray-500 uppercase">降低认知负荷</div>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <div class="text-3xl font-bold text-cyan-400 mb-1">1:1</div>
+                        <div class="text-xs text-gray-500 uppercase">数字孪生还原</div>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-box">
+                <p>项目背景示意图</p>
+                <span>03_Wireframe_and_3D_Layout.png</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 角色职责与设计流程 -->
+    <section id="process" class="bg-[#0d1117]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">角色职责与设计流程</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">需求定义</h3>
+                    <p class="text-sm text-gray-500">业务目标拆解与技术可行性评估</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">实地调研</h3>
+                    <p class="text-sm text-gray-500">走访矿区，观察调度员真实作业环境</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">3D 构建</h3>
+                    <p class="text-sm text-gray-500">WebGL 性能优化与交互逻辑映射</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">视觉还原</h3>
+                    <p class="text-sm text-gray-500">高保真大屏 UI 视觉系统建立</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 用户与需求调研 -->
+    <section id="research" class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8">用户与需求调研</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8">
+                <h4 class="text-cyan-400 font-bold mb-4">核心痛点</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-start"><span class="text-cyan-500 mr-2">•</span> 报警信息散乱，无法第一时间定位井下具体深度。</li>
+                    <li class="flex items-start"><span class="text-cyan-500 mr-2">•</span> 2D 界面无法体现矿井错综复杂的垂直空间关系。</li>
+                </ul>
+            </div>
+            <div class="placeholder-box h-full">
+                <p>用户画像与旅程图</p>
+                <span>02_User_Persona_Journey_Map.png</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 产品结构图 -->
+    <section id="structure" class="bg-[#0d1117]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">产品结构图</h2>
+            <p class="text-gray-400 mb-10 max-w-2xl mx-auto">展示系统的核心功能模块分类，包括 3D 实时监控、历史轨迹回放、传感器预警、设备运维管理等。</p>
+            <div class="placeholder-box min-h-[500px]">
+                <p>信息架构设计图</p>
+                <span>01_Product_Structure_Map_Zhongkuang.png</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 交互设计方案展示 -->
+    <section id="interaction" class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">交互设计方案展示</h2>
+            <p class="text-gray-400">通过 WebGL 技术实现的 3D 联动交互</p>
+        </div>
+        <div class="glass-card overflow-hidden">
+            <div class="p-8 md:p-12 flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">空间下钻交互系统</h3>
+                    <p class="text-gray-400 mb-6">
+                        点击左侧列表，视角自动平滑切换至对应的 3D 巷道节点。传感器数据在 3D 空间中以气泡/热力图形式呈现，支持点击弹窗查看详情。
+                    </p>
+                    <a href="https://youtuweb1.netlify.app/" target="_blank" class="btn-primary inline-block">
+                        查看实时交互演示
+                    </a>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <div class="placeholder-box">
+                        <p>交互流程动图演示</p>
+                        <span>04_Interaction_Flow_Showcase.gif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. UI 组件展示 -->
+    <section id="ui" class="bg-[#0d1117]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">UI 组件展示</h2>
+            <p class="text-gray-400 mb-10 max-w-2xl mx-auto">针对 3D 场景定制的半透明、高对比度组件库，优化了在深色调度环境下的阅读体验。</p>
+            <div class="placeholder-box min-h-[600px]">
+                <p>UI 设计系统与组件规范</p>
+                <span>02_UI_Component_Library_Dark_Mode.png</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 设计成果与影响 -->
+    <section id="impact" class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">设计成果与影响</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-6 border-t-4 border-cyan-500">
+                <h4 class="font-bold mb-2">数据升维</h4>
+                <p class="text-sm text-gray-500">成功整合 500+ 实时传感器点位，解决数据孤岛问题。</p>
+            </div>
+            <div class="glass-card p-6 border-t-4 border-cyan-500">
+                <h4 class="font-bold mb-2">效率跃迁</h4>
+                <p class="text-sm text-gray-500">事故响应的搜索定位时间在模拟测试中减少了 45%。</p>
+            </div>
+            <div class="glass-card p-6 border-t-4 border-cyan-500">
+                <h4 class="font-bold mb-2">行业标杆</h4>
+                <p class="text-sm text-gray-500">建立了符合现代工业互联网美学的 3D 孪生设计范式。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 总结与反思 -->
+    <section id="reflection" class="container mx-auto px-6 mb-20">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">总结与反思</h2>
+            <div class="space-y-6 text-gray-400 leading-relaxed">
+                <p>
+                    <strong class="text-white">技术边界的平衡：</strong> 在设计过程中，深入学习了 WebGL 的性能限制，学会在保证视觉效果的同时通过模型轻量化提升加载速度。
+                </p>
+                <p>
+                    <strong class="text-white">工业设计的温度：</strong> 虽然是硬核的采矿系统，但在警报机制中引入了更人性化的视觉引导，体现了设计对安全生产的关怀。
+                </p>
+                <p>
+                    <strong class="text-white">未来展望：</strong> 考虑引入 VR/AR 设备接入，为远程调度提供更深度的沉浸式体验。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-white/10 text-center">
+        <p class="text-gray-600 text-sm">© 2024 中矿集团铊矿采矿系统 UI/UX 作品集</p>
+    </footer>
+
+    <script>
+        // 添加简单的滚动监听效果
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
